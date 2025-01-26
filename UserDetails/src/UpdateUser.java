@@ -6,7 +6,6 @@ public class UpdateUser {
     public static void updateUser() {
         Scanner input = new Scanner(System.in);
 
-        // Prompt user for the field to update
         System.out.println("Enter User Field that you want to Update:");
         System.out.println("1. user_ID / 2. user Name");
         System.out.println("3. Email / 4. Password");
@@ -148,6 +147,7 @@ public class UpdateUser {
         } catch (SQLException e) {
             System.err.println("SQL Exception: " + e.getMessage());
         }
+        input.close();
     }
 
     public static void main(String[] args) {
